@@ -1,0 +1,327 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Reg Form</title>    
+    <style type="text/css">    
+        body{ 
+            <h1 style = "color:#009900; font-weight: bold; font-size: 42px;">
+            </h1>
+            font-family: Calibri;
+            background color: #d24dff;    
+        }    
+        input[type="text"] {    
+            width: 250px;    
+        }    
+        input[type="submit"], input[type="reset"] {    
+            width: 77px;    
+            height: 27px;    
+            position: relative;left: 180px;    
+        }    
+        form{    
+            text-align: center;    
+            font-family: Calibri;    
+            font-size: 20px;    
+            border: 3px solid black;    
+            width: 600px;    
+            margin: 20px auto;    
+        }    
+        td {    
+            padding: 10px;    
+        }    
+        td:first-child {    
+            text-align: right;    
+            font-weight: bold;    
+        }    
+        td:last-child {    
+            text-align: left;    
+    
+    </style>
+    <h1>Registration form</h1>    
+    <script>    
+        function validate() {    
+            var fname = document.reg_form.fname;    
+            var lname = document.reg_form.lname;    
+            var address = document.reg_form.address;    
+            var gender = document.reg_form.gender;    
+            var email = document.reg_form.email;    
+            var mobile = document.reg_form.mobile;    
+            var course = document.reg_form.course;    
+    
+            if (fname.value.length <= 0) {    
+                alert("Name is required");    
+                fname.focus();    
+                return false;    
+            }    
+            if (lname.value.length <= 0) {    
+                alert("Last Name is required");    
+                lname.focus();    
+                return false;    
+            }    
+            if (address.value.length <= 0) {    
+                alert("Address is required");    
+                address.focus();    
+                return false;    
+            }    
+            if (gender.value.length <= 0) {    
+                alert("Gender is required");    
+                gender.focus();    
+                return false;    
+            }    
+            if (email.value.length <= 0) {    
+                alert("Email Id is required");    
+                email.focus();    
+                return false;    
+            }    
+            if (mobile.value.length <= 0) {    
+                alert("Mobile number is required");    
+                mobile.focus();    
+                return false;    
+            }    
+            if (course.value == "select course") {    
+                alert("Course is required");    
+                course.focus();    
+                return false;    
+            }    
+            return false;    
+        }    
+    </script>    
+</head>    
+<body>    
+    <center><h1>Form Validation using HTML,CSS,JavaScript</h1></center>    
+    <hr>    
+    <form method="" action="" name="reg_form" onsubmit="return validate()">    
+        <h2>Registration Form</h2>    
+        <table>    
+            <tr>    
+                <td><label>First Name: </label></td>    
+                <td>    
+                    <input type="text" name="fname" placeholder="First Name">    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Last Name: </label></td>    
+                <td>    
+                    <input type="text" name="lname" placeholder="Last Name">    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Address: </label></td>    
+                <td>    
+                    <input type="textarea" size="50" name="address" placeholder="Address">    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Gender: </label></td>    
+                <td>    
+                    <input type="radio" name="gender" value="male">Male    
+                    <input type="radio" name="gender" value="femele">Female    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Email Id: </label></td>    
+                <td>    
+                    <input type="text" name="email" placeholder="example@gmail.com">    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Mobile: </label></td>    
+                <td>    
+                    <input type="number" name="mobile">    
+                </td>    
+            </tr>    
+            <tr>    
+            <td><label>Course: </label></td>    
+                <td>    
+                    <select name="course">    
+                        <option value="select course">select course</option>    
+                        <option value="HTML">HTML</option>    
+                        <option value="CSS">CSS</option>    
+                        <option value="JavaScript">JAVASCRIPT</option>    
+                        <option value="Java">JAVA</option>    
+                    </select>    
+                </td>    
+            </tr>    
+            <tr>    
+                <td>    
+                    <input type="submit" name="submit" value="Submit">    
+                    <input type="reset" name="reset" value="Reset">    
+                </td>    
+            </tr>             
+        </table>    
+    </form>    
+   <script type="text/javascript">
+alert("Hello");
+</script>
+<script language=javascript>
+var count=0;
+function as()
+{
+setTimeout("fun1()",5000);
+}
+function fun1()
+{
+var a =new 
+Array("red","darkblue","sky","yellow","blue","pink","green");
+if(count<=6)
+{
+document.bgColor=a[count++];
+setTimeout("fun1()",5000);
+}
+else
+{
+count=0;
+as();
+}
+}
+</script>
+</head>
+<body bgcolor=gray onload=as()>
+<script type="text/javascript">
+function boldText(){
+    var target = document.getElementById("TextArea");
+        if( target.style.fontWeight == "bolder" ) {
+                target.style.fontWeight = "normal";
+                    } else {
+                            target.style.fontWeight = "bolder";
+                                }
+                                }
+
+
+function italicText(){
+    var target = document.getElementById("TextArea");
+        if( target.style.fontStyle == "italic" ) {
+                target.style.fontStyle = "normal";
+                    } else {
+                            target.style.fontStyle = "italic";
+                                }
+                                }
+function underlineText(){
+    var target = document.getElementById("TextArea");
+        if( target.style.textDecoration == "underline" ) {
+                target.style.textDecoration = "none";
+                    } else {
+                            target.style.textDecoration = "underline";
+                                }
+                                }
+                                </script>
+<a href="https://programminghead.com">
+ <input type="submit"/>
+<h2>form for user</h2>
+<form>
+    <table>
+        <tr>
+            <td>
+                <label for="uname">Name</label>
+            </td>
+            <td>
+                <input type="text" id="uname" name="username">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="uemail">Email</label>
+            </td>
+            <td>
+                <input type="text" id="uemail" name="usermail">
+                <button type="button">Check</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="age">Age</label>
+            </td>
+            <td>
+                <input type="text" name="userage" id="age" size="2" maxlength="2">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Country</label>
+            </td>
+            <td>
+                <input type="text" value="India" name="country" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                    <label for="pass">Password</label>
+            </td>
+            <td>
+                    <input type="password" id="pass">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="res">Resume</label>
+            </td>
+            <td>
+                <input type="file" id="res">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Hobbies</label>
+            </td>
+            <td>
+                <label>
+                    <input type="checkbox" checked> Cricket
+                </label>
+                <label>
+                    <input type="checkbox"> Football
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Gender</label>
+            </td>
+            <td>
+                <label>
+                    <input type="radio" value="f" name="gender"> Female</label>
+                    <label>
+                    <input value="m" type="radio" name="gender"> Male</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                    <label for="city">City</label>
+            </td>
+            <td>
+                    <select id="city" name="city">
+                        <option disabled selected>--Choose City--</option>
+                            <optgroup label="Metros">
+                                <option>New Delhi</option>
+                                <option>Mumbai</option>
+                                <option>Channai</option>
+                                <option>Kolkata</option>
+                            </optgroup>
+                            <optgroup label="Others">
+                                <option>Noida</option>
+                                <option>Gurgram</option>
+                                <option>Faridabad</option>
+                                <option>Gaziabad</option>
+                            </optgroup>
+                    </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Address</label>
+            </td>
+            <td>
+                <textarea rows="4" cols="40"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Submit">
+                <input type="reset">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>                        
+ 
+
